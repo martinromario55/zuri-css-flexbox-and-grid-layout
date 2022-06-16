@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+html,
+body {
+  max-width: 100vw;
+  height: 100vh;
+  font-family: 'Big Shoulders Display', cursive;
+  /* font-family: "Lexend Deca", sans-serif; */
+  font-size: 15px;
+  color: #fff;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  max-width: 50%;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+
+.flex-box {
+  font-size: 0.9em;
+  padding: 30px;
+  margin: 0;
+}
+
+.flex-box p {
+  font-family: 'Lexend Deca', sans-serif;
+  padding-bottom: 100px;
+}
+
+.flex-box a {
+  text-decoration: none;
+  border: 2px solid hsl(0, 0%, 95%);
+  border-radius: 20px;
+  padding: 10px 50px;
+  background-color: hsl(0, 0%, 95%);
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.card-body h3 {
+  font-size: 1.5em;
+  color: hsl(0, 0%, 95%);
+}
+
+.card-body p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card-footer {
+  height: 40px;
+  padding-bottom: 20px;
+}
+
+.card-one {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 5px 0 0 5px;
+}
+
+.card-one a {
+  color: hsl(31, 77%, 52%);
+}
+
+.card-one a:hover {
+  background-color: hsla(31, 77%, 52%, 0);
+  color: hsl(0, 0%, 95%);
+}
+
+.card-two {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card-two a {
+  color: hsl(184, 100%, 22%);
+}
+
+.card-two a:hover {
+  background-color: hsla(184, 100%, 22%, 0);
+  color: hsl(0, 0%, 95%);
+}
+
+.card-three {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 5px 5px 0;
+}
+
+.card-three a {
+  color: hsl(179, 100%, 13%);
+}
+
+.card-three a:hover {
+  background-color: hsla(179, 100%, 13%, 0);
+  color: hsl(0, 0%, 95%);
+}
+
+/* Media Queries */
+@media (max-width: 375px) {
+  body {
+    height: auto;
+  }
+
+  .container {
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+
+  .card-one,
+  .card-three {
+    border-radius: 0;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 900px) {
+  .container {
+    flex-wrap: nowrap;
+    max-width: 600px;
+  }
+
+  .flex-box a {
+    padding: 10px 10px;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1440px) {
+  .container {
+    flex-wrap: nowrap;
+    max-width: 900px;
+  }
+
+  .flex-box a {
+    padding: 10px 40px;
+  }
+}
